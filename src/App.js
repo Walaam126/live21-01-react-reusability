@@ -1,11 +1,16 @@
 import "./App.css";
-
+import data from './data';
+import { AppWrapper } from './styles';
+import InstructorTag from './components/InstructorTag';
 const App = () => {
+  const Instlist = data.map((Instructor) => (
+    <InstructorTag name={Instructor.name} github={Instructor.github} emoji={Instructor.emoji} />
+  ));
   return (
-    <div className="AppWrapper">
+    <AppWrapper>
       <h2>When in doubt, ask for help!</h2>
-
-      <div
+      {Instlist}
+      {/* <div
         className="TagWrapper"
         onClick={() => window.open(`https://github.com/DarthHamza`)}
       >
@@ -30,8 +35,8 @@ const App = () => {
         <span className="Emoji">🦍</span>
         <span className="Name">Hasan</span>
         <span className="GoToGithub">Go to GitHub</span>
-      </div>
-    </div>
+      </div> */}
+    </AppWrapper>
   );
 };
 
