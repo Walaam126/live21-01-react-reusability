@@ -30,28 +30,22 @@ background-color: rgba(0, 0, 0, 0.4);
 &:hover{
     background-color: rgba(0, 0, 0, 0.8);
   }
+`
 
-  span{
-    &.Emoji{
-        margin-right: 20px;
-        font-size: 1.6em;
-    }
-    
-    span{
-     &.Name{
-        flex-grow: 1;
-        font-size: 1.6em;
-        font-weight: 500;
-        color: rgba(255, 255, 255, 0.9);
-        }
-
-    span{
-     &.GoToGithub{
-        font-size: 0.8em;
-        user-select: none;
-        color: rgba(255, 255, 255, 0.3);
-        }
-
+export const Emoji=styled.span`
+      margin-right: 20px;
+      font-size: 1.6em;
 `;
 
+export const Name=styled.span`
+flex-grow: 1;
+font-size: 1.6em;
+font-weight: 500;
+color: rgba(255, 255, 255, 0.9);
+`
+export const GoToGithub=styled.span`
+font-size: 0.8em;
+user-select: none;
+color: rgba(255, 255, 255, 0.3);
+`;
 
