@@ -4,10 +4,10 @@ const InstructorTag = (props) => {
   // Create the InstructorTag component here
   return (
    <TagWrapper
-    onClick={() => window.open(`${props.Instructor.github}`)}
+    onClick={() => window.open(`${props.github}`)}
   >
-    <span className="Emoji">{props.Instructor.emoji}</span>
-    <span className="Name">{props.Instructor.name}</span>
+    <span className="Emoji">{props.emoji}</span>
+    <span className="Name">{props.name}</span>
     <span className="GoToGithub">Go to GitHub</span>
     </TagWrapper>
     );
